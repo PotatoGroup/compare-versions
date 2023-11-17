@@ -1,0 +1,14 @@
+{
+  "name": "@astii/compare-version",
+  "version": "1.0.0",
+  "main": "/lib/index.js",
+  "module": "/es/index.js",
+  "types": "/es/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
