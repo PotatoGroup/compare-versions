@@ -1,16 +1,18 @@
 {
   "name": "@astii/compare-version",
   "version": "1.0.0",
-  "main": "/lib/index.js",
-  "module": "/es/index.js",
-  "types": "/es/index.d.ts",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
   "scripts": {
     "build:type": "tsc --emitDeclarationOnly",
-    "build": "export NODE_ENV=production && npm run build:type && rollup -c"
+    "build": "npm run build:type && rollup -c",
+    "publish": "npm publish"
   },
   "files": [
     "es",
-    "lib"
+    "lib",
+    "dist"
   ],
   "devDependencies": {
     "@babel/core": "^7.23.3",
@@ -42,5 +44,8 @@
   "license": "MIT",
   "keywords": [
     "compare-version"
-  ]
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.23.2"
+  }
 }

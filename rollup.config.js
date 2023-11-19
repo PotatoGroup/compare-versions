@@ -17,7 +17,7 @@ const plugins = () => {
           },
         }),
       ]
-    : void 0;
+    : [];
 };
 
 module.exports = {
