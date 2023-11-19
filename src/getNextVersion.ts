@@ -4,7 +4,7 @@ const getNextVersion = (version: string) => {
   const versionArr = matchers.map((matcher) => parseInt(matcher[0]));
   const calNextVersion = (arr: Array<number>): Array<number> => {
     const current = arr.pop();
-    if (!current) return [1];
+    if (current === void 0) return [1];
     const next = current + 1;
     if (next === 100) {
       return [...calNextVersion(arr), 0];
