@@ -5,7 +5,8 @@
   "module": "/es/index.js",
   "types": "/es/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build:type": "tsc --emitDeclarationOnly",
+    "build": "export NODE_ENV=production && npm run build:type && rollup -c"
   },
   "files": [
     "es",
